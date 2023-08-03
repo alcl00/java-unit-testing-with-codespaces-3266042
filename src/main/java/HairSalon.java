@@ -18,7 +18,7 @@ public class HairSalon {
         throw new IllegalArgumentException("Weekday must end with 'day'");
       }
       
-      if(weekDay.equals("Monday") || weekDay.equals("Tuesday")) {
+      if(Arrays.asList(openingDays).contains(weekDay)) {
         return true;
       }
 
